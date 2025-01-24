@@ -40,8 +40,14 @@ Follow these steps to set up and run the project:
 2. **Set up a virtual environment** (optional but recommended):
     ```sh
     python -m venv venv
+
+    ```sh
     source venv/bin/activate  # On Windows use `venv\Scripts\activate`
     ```
+    ```sh
+    source venv/bin/activate  # On Mac and Linux
+    ```
+
 
 3. **Install the required dependencies**:
     ```sh
