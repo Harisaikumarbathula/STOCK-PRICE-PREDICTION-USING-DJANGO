@@ -15,7 +15,7 @@ Follow these steps to set up and run the project:
 
 1. **Clone the repository**:
     ```sh
-    git clone <repository_url>
+    git clone https://github.com/Harisaikumarbathula/FINAL-YEAR-PROJECT.git
     cd FINAL YEAR PROJECT
     ```
 
@@ -32,7 +32,7 @@ Follow these steps to set up and run the project:
 
 4. **Run the main script**:
     ```sh
-    python main.py
+    python manage.py runserver
     ```
 
 ## Additional Information
