@@ -24,7 +24,7 @@ We are using Django, a high-level Python web framework, for the backend of this 
 ## Description
 This project folder contains the following files:
 
-1. `main.py`: The main script to run the project.
+1. `manage.py`: The main script to run the project.
 2. `requirements.txt`: A file listing all the dependencies required to run the project.
 3. `README.md`: This file, providing an overview and instructions.
 4. `data/`: A directory containing the dataset used in the project.
@@ -42,12 +42,8 @@ Follow these steps to set up and run the project:
 
 2. **Set up a virtual environment** (optional but recommended):
     ```sh
-    python -m venv venv
-
-    ```sh
+    python -m venv venv(create virtual environment)
     source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-    ```
-    ```sh
     source venv/bin/activate  # On Mac and Linux
     ```
 
