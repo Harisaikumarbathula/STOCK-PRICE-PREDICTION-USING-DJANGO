@@ -1,3 +1,4 @@
+![image](https://github.com/user-attachments/assets/ef35a613-e900-4f66-b97c-e03569a0f997)
 
 
 # STOCK PRICE FORECASTING
