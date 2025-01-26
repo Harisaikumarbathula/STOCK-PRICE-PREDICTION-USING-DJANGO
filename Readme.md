@@ -1,4 +1,3 @@
-![Uploading image.png…]()
 
 
 # STOCK PRICE FORECASTING
