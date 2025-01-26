@@ -1,3 +1,6 @@
+![Uploading image.png…]()
+
+
 # STOCK PRICE FORECASTING
 
 ## Stock Price Forecasting Using Linear Regression
