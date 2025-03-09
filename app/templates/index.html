@@ -134,6 +134,7 @@
                         <table class="table text-start align-middle table-bordered table-hover mb-0">
                             <thead>
                                 <tr class="text-white">
+                                    <th scope="col">Date</th>
                                     <th scope="col">Ticker</th>
                                     <th scope="col">Open</th>
                                     <th scope="col">High</th>
@@ -146,6 +147,7 @@
                                 {% if recent_stocks %}
                                 {% for i in recent_stocks %}
                                 <tr>
+                                    <td>{{i.Date}}</td>
                                     <td>{{i.Ticker}}</td>
                                     <td>{{i.Open}}</td>
                                     <td>{{i.High}}</td>
@@ -167,12 +169,6 @@
             <div class="container-fluid pt-4 px-4">
                 <div class="bg-secondary rounded-top p-4">
                     <div class="row">
-                        <div class="col-12 col-sm-6 text-center text-sm-start">
-                            &copy; <a href="#">BathulaHarisaikumar</a>, All Right Reserved. 
-                        </div>
-                        <div class="col-12 col-sm-6 text-center text-sm-end">
-                            Designed By <a href="https://www.linkedin.com/in/harisaikumarbathula">BathulaHarisaikumar</a>
-                        </div>
                     </div>
                 </div>
             </div>
