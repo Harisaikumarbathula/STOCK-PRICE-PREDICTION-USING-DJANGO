@@ -83,7 +83,7 @@ def predict(request, ticker_value, number_of_days):
     try:
         # ticker_value = request.POST.get('ticker')
         ticker_value = ticker_value.upper()
-        df = yf.download(tickers = ticker_value, period='1d', interval='1m',threads="true")
+        df = yf.download(tickers = ticker_value, period='1d', interval='1m',threads="true",multi_level_index=False)
         print("Downloaded ticker = {} successfully".format(ticker_value))
     except:
         return render(request, 'API_Down.html', {})

@@ -162,15 +162,28 @@
                 </div>
             </div>
             
-            <div class="container-fluid pt-2 px-2">
-                <div class="row g-2">
+            <div class="container-fluid pt-4 px-4">
+                <div class="row g-4">
+                    <div class="col-sm-12 col-xl-6">
                         <div class="bg-secondary text-center rounded p-4">
                             <div class="d-flex align-items-center justify-content-between mb-4">
+                                <h6 class="mb-0">Recent Stock price of {{ticker_value}}</h6>
+                                <a href="https://finance.yahoo.com/quote/{{ticker_value}}/chart?p={{ticker_value}}#">
+                                    Show More
+                                </a>
                             </div>
+                            {% block Left_Plot %}
+
+                                {% autoescape off %}
+                                    {{ plot_div }}
+                                {% endautoescape %}
+
+                            {% endblock Left_Plot %}
+                        </div>
                     </div>
-                    <div class="col-sm-16 col-xl-16">
-                        <div class="bg-secondary text-center rounded pt-2">
-                            <div class="d-flex align-items-center justify-content-between mb-0">
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-secondary text-center rounded p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
                                 <h6 class="mb-0">Predicted Stock price of {{ticker_value}} for next {{number_of_days}} days</h6>
                             </div>
                             {% block Right_Plot %}
@@ -192,6 +205,12 @@
             <div class="container-fluid pt-4 px-4">
                 <div class="bg-secondary rounded-top p-4">
                     <div class="row">
+                        <div class="col-12 col-sm-6 text-center text-sm-start">
+                            &copy; <a href="#">BathulaHarisaikumar</a>, All Right Reserved. 
+                        </div>
+                        <div class="col-12 col-sm-6 text-center text-sm-end">
+                            Designed By <a href="https://www.linkedin.com/in/harisaikumarbathula">BathulaHarisaikumar</a>
+                        </div>
                     </div>
                 </div>
             </div>
