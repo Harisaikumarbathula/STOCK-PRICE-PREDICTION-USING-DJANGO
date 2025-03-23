@@ -2,24 +2,18 @@ from urllib import request
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import RequestContext
-
 from plotly.offline import plot
 import plotly.graph_objects as go
 import plotly.express as px
 from plotly.graph_objs import Scatter
-
 import pandas as pd
 import numpy as np
 import json
-
 import yfinance as yf
 import datetime as dt
-
 from .models import Harisai
-
 from sklearn.linear_model import LinearRegression
 from sklearn import preprocessing, model_selection, svm
-
 # The Home page when Server loads up
 def index(request):
     # ================================================= Left Card Plot =========================================================
