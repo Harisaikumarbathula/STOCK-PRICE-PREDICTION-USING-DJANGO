@@ -8,20 +8,23 @@ import plotly.express as px
 from plotly.graph_objs import Scatter
 import pandas as pd
 import numpy as np
+import time
 import json
 import yfinance as yf
 import datetime as dt
 from .models import Harisai
 from sklearn.linear_model import LinearRegression
 from sklearn import preprocessing, model_selection, svm
+import datetime as dt
 # The Home page when Server loads up
 def index(request):
     # ================================================= Left Card Plot =========================================================
     tickers = ['AAPL', 'AMZN', 'QCOM', 'META', 'NVDA', 'JPM']
     data = yf.download(
         tickers=tickers,
-        period='1mo',
-        interval='1d',
+        start=dt.datetime.now() - dt.timedelta(days=30),
+        period='1d',
+        interval='1h',
         group_by='ticker',
         threads=True,
     )
@@ -34,6 +37,7 @@ def index(request):
         fig_left.add_trace(
             go.Scatter(x=closes['Date'], y=closes[ticker], name=ticker)
         )
+    time.sleep(5)  # Sleep for 1 second to avoid hitting API limits
     fig_left.update_layout(paper_bgcolor="#14151b", plot_bgcolor="#14151b", font_color="white")
 
     plot_div_left = plot(fig_left, auto_open=False, output_type='div')
@@ -43,6 +47,7 @@ def index(request):
     for ticker in tickers:
         stock = yf.Ticker(ticker)
         hist = stock.history(period="1d")  # Get latest day data
+        time.sleep(5)  # Sleep for 1 second to avoid hitting API limits
         if not hist.empty:
             latest = hist.iloc[-1]  # Get the most recent data
             stock_data.append({
