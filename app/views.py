@@ -26,7 +26,7 @@ def index(request):
         period='1d',
         interval='1h',
         group_by='ticker',
-        threads=True,
+        threads=False,
     )
 
     # Extract Close prices for each ticker
