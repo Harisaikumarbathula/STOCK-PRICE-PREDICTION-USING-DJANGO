@@ -11,7 +11,7 @@ idna==3.10
 joblib==1.5.0
 multitasking==0.0.11
 narwhals==1.38.2
-numpy==2.2.5
+numpy
 packaging==25.0
 panadas==0.2
 pandas==2.2.3
