@@ -4,7 +4,7 @@ certifi==2025.4.26
 cffi==1.17.1
 charset-normalizer==3.4.2
 curl_cffi==0.10.0
-Django==5.2.1
+Django
 frozendict==2.4.6
 gunicorn==23.0.0
 idna==3.10
